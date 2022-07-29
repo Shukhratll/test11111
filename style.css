@@ -1,0 +1,628 @@
+/* Указываем box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Убираем внутренние отступы */
+ul[class],
+ol[class] {
+    padding: 0;
+}
+
+/* Убираем внешние отступы */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Выставляем основные настройки по-умолчанию для body */
+body {
+    min-width: 1380px;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+ul[class],
+ol[class] {
+    list-style: none;
+}
+
+/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* Упрощаем работу с изображениями */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Указываем понятную периодичность в потоке данных у article*/
+article>*+* {
+    margin-top: 1em;
+}
+
+/* Наследуем шрифты для инпутов и кнопок */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+
+
+
+.wrapper {
+    padding: 0px 0px 265px;
+}
+
+.header {
+    margin-bottom: 165px;
+}
+
+.container {
+    max-width: 1380px;
+    margin: 0 auto;
+    padding: 0px 20px;
+}
+
+.inner-header {
+    display: flex;
+    padding-top: 30px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 400px;
+}
+
+
+.icon-header {
+    display: flex;
+    margin-right: 110px;
+}
+
+
+.text-white {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 133.6%;
+    color: #FFFFFF;
+    background: #A3C1EF;
+    border-radius: 5px;
+    padding: 97px 14px 8px;
+
+}
+
+li {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 133.6%;
+    color: #163561;
+
+}
+
+.nav-menu li {
+    margin-left: 48px;
+}
+
+.profil-img {
+    margin-left: 300px;
+}
+
+
+
+.profil {
+    display: flex;
+    align-items: center;
+}
+
+.uvedom-img {
+    margin-left: 65px;
+}
+
+
+.header-btn {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #99BAED;
+    border-radius: 20px;
+    margin-left: 72px;
+    padding: 23px 32px;
+}
+
+.yellow {
+
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 133.6%;
+    color: #FBB400;
+
+}
+
+.title-main {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 75px;
+    line-height: 133.6%;
+    color: #163561;
+    margin-bottom: 29px;
+    width: 576px;
+}
+
+
+.text-main {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #153461;
+    opacity: 0.65;
+    margin-bottom: 95px;
+    width: 526px;
+}
+
+.btn-main {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #99BAED;
+    border-radius: 20px;
+    padding: 22px 41px;
+
+}
+
+.main-img {
+    margin-left: 580px;
+    margin-top: -700px;
+    margin-bottom: 100px;
+    max-width: 800px;
+}
+
+.history {
+    background: url(".//images/history-img.png");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: left 0%;
+    padding: 177px 0px 136px;
+    margin-left: 117px;
+}
+
+.img-history {
+    max-width: 650px;
+}
+
+
+.blue {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #163561;
+}
+
+.inner-history {
+    width: 526px;
+    margin-left: auto;
+
+}
+
+.title-history {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #FBB400;
+    margin-bottom: 80px;
+}
+
+
+.text-history {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #153461;
+    opacity: 0.65;
+    margin-bottom: 48px;
+
+}
+
+
+.text-history-2 {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #153461;
+    opacity: 0.65;
+    margin-bottom: 108px;
+
+}
+
+
+.btn-history {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #99BAED;
+    border-radius: 20px;
+    padding: 23px 41px;
+    margin-top: 108px;
+}
+
+
+.servis {
+    padding: 134px 0px 272px;
+}
+
+
+.title-servis {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 116.6%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #163561;
+
+}
+
+.yellow-1 {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 116.6%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FBB400;
+    display: block;
+    margin-bottom: 85px;
+
+}
+
+
+.card {
+    display: flex;
+    align-items: center;
+}
+
+.card .card-1 {
+    margin-left: 50px;
+}
+
+.card-1 {
+    background: #99BAED;
+    border-radius: 29px;
+    width: 440px;
+    height: 533px;
+    padding-top: 50px;
+    margin-right: 50px;
+
+}
+
+.card-1-img {
+    background: #E5ECFE;
+    box-shadow: 0px 1px 0px #008FDD;
+    border-radius: 13px;
+    padding: 30px 23px;
+    margin-left: 150px;
+}
+
+.title-card-1 {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 116.6%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    padding-top: 59px;
+
+}
+
+.text-card-1 {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150.6%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    opacity: 0.65;
+    padding-top: 60px;
+    width: 359px;
+    margin: auto;
+
+}
+
+
+.card-2 {
+    background: #FAFBFF;
+    border-radius: 29px;
+    width: 440px;
+    height: 533px;
+    padding-top: 50px;
+    margin-right: 50px;
+    box-shadow: 0px 5px 0px #99baed;
+}
+
+
+
+
+
+.card-3 {
+    background: #FAFBFF;
+    border-radius: 29px;
+    width: 440px;
+    height: 533px;
+    padding-top: 50px;
+    box-shadow: 0px 5px 0px #99baed;
+}
+
+
+
+.card-2-img {
+    background: #E5ECFE;
+    box-shadow: 0px 1px 0px #008FDD;
+    border-radius: 13px;
+    padding: 15px 5px;
+    margin-left: 150px;
+}
+
+
+.card-3-img {
+    background: #E5ECFE;
+    box-shadow: 0px 1px 0px #008fdd;
+    border-radius: 13px;
+    margin-left: 150px;
+    padding: 30px 18px;
+}
+
+
+
+
+
+.title-card-2 {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 116.6%;
+    /* or 52px */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #163561;
+    padding-top: 59px;
+}
+
+.text-card-2 {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150.6%;
+    /* or 38px */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: #153461;
+
+    opacity: 0.65;
+    padding-top: 60px;
+    width: 359px;
+    margin: auto;
+}
+
+
+.gallery {
+    padding: 0px 0px 98px;
+}
+
+
+.blue-gallery {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 116.6%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #163561;
+
+}
+
+.title-gallery {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 116.6%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #FBB400;
+    margin-bottom: 110px;
+}
+
+.gallery-img {
+
+    margin-bottom: 77px;
+
+}
+
+.btn-block {
+    text-align: center;
+    margin-bottom: 168px;
+}
+
+.btn-gallery {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #99BAED;
+    border-radius: 20px;
+    padding: 23px 56px;
+
+
+
+}
+
+.gallery__img-icon {
+    display: flex;
+    margin-left: 580px;
+    margin-bottom: 35px;
+
+}
+
+.text-gallery {
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 150.6%;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #153461;
+    opacity: 0.65;
+    margin-bottom: 67px;
+
+
+}
+
+
+.inner-soc {
+    display: flex;
+    align-items: center;
+    margin-bottom: 47px;
+    margin-left: 540px;
+}
+
+.facebook-icon {
+    width: 67px;
+    height: 67px;
+    background-color: #99BAED;
+    padding: 15px 24px;
+    border-radius: 35%;
+
+}
+
+.fc-block {
+    margin-right: 25px;
+}
+
+.twitter-block {
+    margin-right: 25px;
+}
+
+.twitter-icon {
+    width: 67px;
+    height: 67px;
+    background: #D3E5FF;
+    padding: 21px 18px;
+    border-radius: 35%;
+
+}
+
+.google-icon {
+    width: 67px;
+    height: 67px;
+    background: #D3E5FF;
+    padding: 20px 18px;
+    border-radius: 35%;
+}
+
+
+
+
+.zapis {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.btn-zps {
+
+    font-family: 'Catamaran';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150.6%;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background: #99BAED;
+    border-radius: 20px;
+    padding: 23px 56px;
+    margin-bottom: 30px;
+}
+
+
+.polos {
+    border: 1px solid #99BAED;
+    width: 1362px;
+}
